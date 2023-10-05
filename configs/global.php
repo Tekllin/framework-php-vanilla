@@ -6,7 +6,7 @@ $globalConfigs =
         "db_name" => "php_framework",
         "host" => "localhost",
         "port" => 3306,
-        "user" => "jin",
-        "password" => "motherload"
+        "user" => "tekllin",
+        "password" => "root"
     ]
 ];
