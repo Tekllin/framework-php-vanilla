@@ -112,28 +112,28 @@ function queryBuilder($method, $table, ...$payload){
 } 
 
 // //fonction getById
-// $statement = $connection->query("SELECT * FROM contact WHERE `name` = 'Favario' AND `surname` = '".htmlspecialchars($_GET['surname']). " '");
+// $statement = $connection->query("SELECT * FROM contacts WHERE `name` = 'Favario' AND `surname` = '".htmlspecialchars($_GET['surname']). " '");
 // $data = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 
 // //fonction create
-// $statement = $connection->prepare("INSERT INTO `contact` (`name`, `surname`, `status`)  VALUES ('Favario', 'Nathaniel', 'online') ");
+// $statement = $connection->prepare("INSERT INTO `contacts` (`name`, `surname`, `status`)  VALUES ('Favario', 'Nathaniel', 'online') ");
 // $statement->bindParam(1,$_GET['surname']);
 // $statement->bindParam(2,$_GET['name']);
 // $statement->execute();
 
 // //fonction getAll
-// $statement = $connection->query("SELECT * FROM contact WHERE 1");
+// $statement = $connection->query("SELECT * FROM contacts WHERE 1");
 // $data = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 // //fonction delete
-// $statement = $connection->prepare("DELETE FROM `contact` WHERE id = ?");
+// $statement = $connection->prepare("DELETE FROM `contacts` WHERE id = ?");
 // $id = 3;
 // $statement->bindParam(1, $id);
 // $statement->execute();
 
 // //fonction update
-// $statement = $connection->prepare("UPDATE `contact` SET `status` = 'offline' WHERE id = ?");
+// $statement = $connection->prepare("UPDATE `contacts` SET `status` = 'offline' WHERE id = ?");
 // $id = 2;
 // $statement->bindParam(1, $id);
 // $statement->execute();
@@ -145,7 +145,7 @@ function queryBuilder($method, $table, ...$payload){
 //     $statement->execute();
 // }
 
-// delete($connection,"contact", 3);
+// delete($connection,"contacts", 3);
 
 // function update($connection, $table, $status, $id)
 // {
@@ -153,7 +153,7 @@ function queryBuilder($method, $table, ...$payload){
 //     $statement->bindParam(1, $id);
 //     $statement->execute();
 // }
-// update($connection, "contact", "status", 4);
+// update($connection, "contacts", "status", 4);
 
 
     
