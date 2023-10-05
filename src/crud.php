@@ -110,9 +110,12 @@ function queryBuilder($method, $table, ...$payload){
    return $query;
 
 } 
+
 // //fonction getById
 // $statement = $connection->query("SELECT * FROM contact WHERE `name` = 'Favario' AND `surname` = '".htmlspecialchars($_GET['surname']). " '");
 // $data = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+
 // //fonction create
 // $statement = $connection->prepare("INSERT INTO `contact` (`name`, `surname`, `status`)  VALUES ('Favario', 'Nathaniel', 'online') ");
 // $statement->bindParam(1,$_GET['surname']);
@@ -154,10 +157,6 @@ function queryBuilder($method, $table, ...$payload){
 
 
     
-// dd(queryBuilder("c", "voiture", ["modele" =>"Ferrari"], ["couleur" => "rouge" ], ["test" => "taste"]));
-// dd(queryBuilder("r", "contacts",  ["name" => "Delaistre" ]));
-// dd(queryBuilder("u", "voiture", ["modele" => "Ferrari" ], ["couleur" => "rouge" ], ["id" => 2]));
-// dd(queryBuilder("d", "voiture", ["modele" => "Ferrari" ], ["couleur" => "rouge" ]));
 
 
 
