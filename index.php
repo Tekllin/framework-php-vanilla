@@ -20,6 +20,9 @@ echo $db->table("Toto")->update(['filters' => ["name" => "Delaistre", "surname" 
 
 // require_once './configs/bootstrap.php';
 // ob_start();
+// if(isset($_GET["page"])){
+//     fromInc($_GET['page']);
+// }
 
 // if(isset($_GET["page"])){
 //     fromInc($_GET['page']);
