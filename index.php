@@ -9,7 +9,12 @@ if(isset($_GET["page"])){
 $pageContent = [
     "html" => ob_get_clean()
 ];
+if(isset($_GET["layout"])){
 
-include "./templates/layouts/". $_GET["layout"] .".layout.php";
+    include "./templates/layouts/". $_GET["layout"] .".layout.php";
+}else{
+    include "./templates/layouts/html.layout.php";
+
+}
 
 ?>

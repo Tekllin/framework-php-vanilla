@@ -8,6 +8,6 @@ $globalConfigs =
         "host" => "localhost",
         "port" => 3306,
         "user" => "tekllin",
-        "password" => "root",
+        "password" => "root"
     ]
 ];
