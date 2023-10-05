@@ -16,10 +16,10 @@ $statement = $connection->query("SELECT * FROM contact WHERE 1");
 $data = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 //fonction delete
-$statement = $connection->prepare("DELETE FROM `contact` WHERE id=?");
+$statement = $connection->prepare("DELETE FROM `contact` WHERE id = ?");
 $id = 3;
-$statement->bindParam(1,$id);
-$statement->execut();
+$statement->bindParam(1, $id);
+$statement->execute();
 
 //fonction update
 $statement = $connexion->prepare("UPDATE `contact` SET `status` = offline WHERE id = ?");
