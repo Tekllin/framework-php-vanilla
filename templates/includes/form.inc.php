@@ -12,7 +12,6 @@ require './configs/global.php';
       <label for="surname">Prénom du pelo&nbsp;:</label>
       <input type="text" id="surname" name="surname" />
     </li>
-
   </ul>
   <input type="submit" value="Ajouter un Pelo" />
 </form>
