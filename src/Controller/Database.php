@@ -1,5 +1,5 @@
 <?php
-namespace Jin\Controller;
+namespace Tekllin\Controller;
 
 class Database {
     private $table;

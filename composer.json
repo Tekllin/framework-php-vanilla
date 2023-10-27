@@ -1,15 +1,15 @@
 {
-    "name": "jin/my-own-framework",
+    "name": "tekllin/my-own-framework",
     "description": "Super framework genial woah",
     "autoload": {
         "psr-4": {
-            "Jin\\": "src/"
+            "Tekllin\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Nvmeless",
-            "email": "alexandre.quilan.delaistre@gmail.com"
+            "name": "Tekllin",
+            "email": "nathaniel.favario@gmail.com"
         }
     ],
     "require-dev": {
