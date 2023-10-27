@@ -25,8 +25,6 @@ require './configs/global.php';
 </form>
 
 <?php 
-if(isset($_POST['name']) && isset($_POST['surname'])){
-    $connection->query(queryBuilder('c', 'contacts', ['name' => $_POST['name']], ['surname' => $_POST['surname']]));
 if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['email']) && isset($_POST['tel'])){
   $connection->query(queryBuilder('c', 'annuaire_nws', ['name' => $_POST['name']],['surname' => $_POST['surname']],['email' => $_POST['email']],['tel' => $_POST['tel']]));
 }
