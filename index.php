@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+require_once './configs/bootstrap.php';
 use Tekllin\Controller\Database;
 
 

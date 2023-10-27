@@ -6,6 +6,10 @@ class Database {
     private $method;
     private $data;
     private $format;
+    private $availableKeys = ['post','filters'];
+    private $post;
+    private $filter;
+    private $query;
     public function __construct(){
 
 
@@ -124,11 +128,16 @@ class Database {
     }
 
     private function setParams($key, $data){
-        $this->$key =  $data;
-        return $this;
+        if(in_array($key, $this->availableKeys)){
+            
+            $this->$key =  $data;
+            return $this;
+        }
     }
     public function getParams($key){
-        return $this->$key;
+        if(in_array($key, $this->availableKeys)){
+            return $this->$key;
+        }
     }
 
     private function build(){

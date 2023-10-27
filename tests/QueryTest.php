@@ -2,6 +2,7 @@
 use PHPUnit\Framework\TestCase;
 use Tekllin\Controller\Database;
 class QueryTest extends TestCase {
+
     public function testMethod() {
         $db = new Database();
         $this->assertEquals("get", $db->get([])->getMethod());
@@ -32,4 +33,8 @@ class QueryTest extends TestCase {
         
     }
 
+    public function testParams() {
+        $db = new Database();
+        
+}
 }
