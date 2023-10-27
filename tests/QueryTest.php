@@ -1,6 +1,6 @@
 <?php 
 use PHPUnit\Framework\TestCase;
-use Jin\Controller\Database;
+use Tekllin\Controller\Database;
 class QueryTest extends TestCase {
 
     public function testMethod(){

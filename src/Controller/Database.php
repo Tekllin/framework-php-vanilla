@@ -109,7 +109,7 @@ class Database {
             $params = [];
             foreach ($this->getParams($dataKey) as $key => $param) {
                 $param = $this->makeSqlValue($param);
-                $params[] = "$key = $param"; 
+                $params[] = "`$key` = $param"; 
             }
             $res .= $this->makeListing($params, $separator);
         }
