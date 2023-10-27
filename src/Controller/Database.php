@@ -164,8 +164,6 @@ class Database {
         $query = "";
         switch($this->getMethod()){
             case 'update':
-                // $format = "UPDATE %s SET %s WHERE %s ;";
-
                 $query = sprintf($this->getFormat(), $this->getTable(), $this->parseParams('post'), $this->parseParams());
                 break;
             
