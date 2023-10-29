@@ -1,3 +1,4 @@
 /configs/global.php
 
 /vendor/
+.phpunit.cache/test-results
